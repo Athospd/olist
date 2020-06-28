@@ -1,0 +1,38 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# olist
+
+Base de dados da OLIST no formato .csv, .db (SQLite) e .rda (R). 
+
+**Repositório original:** [github.com/olist/work-at-olist-data](https://github.com/olist/work-at-olist-data)
+
+## Instalação
+
+```{r}
+remotes::install_github("athospd/olist")
+```
+
+
+## arquivos .csv e .db pelo `system.file()`
+
+```{r}
+system.file("csv", package = "olist") # csvs
+system.file("sqlite/olist.db", package = "olist") # sqlite
+```
+
+## TODO
+
+- Documentações
